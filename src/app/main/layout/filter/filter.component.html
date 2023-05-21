@@ -1,0 +1,83 @@
+
+<!-- animate__animated animate__bounceInRight -->
+<div id="filter-back"  class=" filter-background"  style="position: fixed; height: 100vh; width: 100%; top: 0px; left: 0px; z-index: 1000;">
+    <div id="filter" class="filter show" style="transform: translateX(0%) translateZ(0px);" >
+        <div>
+            <div class="filter__header filter__section">
+                <h5>Filter</h5><span style="cursor: pointer;"> Clear all</span>
+            </div>
+            <div class="filter__price filter__section">
+                <h5>Price range</h5><small style="opacity: 0.8;">The average nightly price is $133</small>
+                <div class="checkout__date" style="margin-top: 20px;">
+                    <div class="row">
+                        <div class="col-6">
+                            <div style="margin-bottom: 20px;">
+                                <label for="numberInput" class="number-label" style="opacity: 0.8;">Min Price </label>
+                                <span class="input-symbol-dollar">
+                                    <input (keydown)="acceptNumber($event)" style="padding-left: 18px !important;" type="text" id="numberInput" tabindex="0" name="abc" class="abc-input "  placeholder="0"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                    <div style="margin-bottom: 20px;">
+                        <label for="numberInput" class="number-label" style="opacity: 0.8">Max Price </label>
+                        <span class="input-symbol-dollar">
+                            <input (keydown)="acceptNumber($event)" style="padding-left: 18px !important;"  type="text" id="numberInput" tabindex="0" name="abc" class="abc-input "  placeholder="0"></span>
+                         
+                    </div>
+                        </div>
+                    </div>
+                 
+                  
+                </div>
+            </div>
+            <div class="place-type filter__section">
+                <h5>Type of place</h5>
+                <div class="place-type__item">
+                    <!-- <span></span> -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </div>
+                    <div>
+                        <p>Entire Place</p><small>A place all to yourself</small>
+                    </div>
+                </div>
+                <div class="place-type__item">
+                    <!-- <span class="spa-2"></span> -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </div>
+                    <div>
+                        <p>Private room</p><small>Your own room in a home or a hotel, plus some shared common
+                            spaces.</small>
+                    </div>
+                </div>
+                <div class="place-type__item">
+                    <!-- <span class="spa-3"></span> -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </div>
+                    <div>
+                        <p> Shared room </p><small>A sleeping space and common areas that may be shared with
+                            others.</small>
+                    </div>
+                </div>
+            </div>
+            <div class="place-options filter__section">
+                <h5>Rooms, beds, and baths</h5>
+                <div class="place-option__item">
+                    <p>bedrooms</p><span
+                        class="active">Any</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5+</span>
+                </div>
+                <div class="place-option__item">
+                    <p>beds</p><span
+                        class="active">Any</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5+</span>
+                </div>
+                <div class="place-option__item">
+                    <p>bathrooms</p><span
+                        class="active">Any</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5+</span>
+                </div>
+            </div>
+        </div>
+        <div class="filter__button"><button disabled="">Show 350 Homes</button></div>
+    </div>
+</div>
